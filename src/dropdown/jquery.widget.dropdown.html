@@ -1,0 +1,400 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>jQuery Widget | Dropdown</title>
+<link rel="stylesheet" type="text/css" href="jquery.widget.dropdown.css" />
+<!--<link rel="stylesheet" type="text/css" href="jquery.widget.dropdown.blue.css" />-->
+<!--<link rel="stylesheet" type="text/css" href="jquery.widget.dropdown.green.css" />-->
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="jquery.widget.dropdown.js"></script>
+</head>
+<body>
+
+
+<div class="widget_dropdown_outer">
+
+    <div class="widget_menu">
+        <a class="text">文件</a>
+        <a class="text">编辑</a>
+        <a class="text">测试1</a>
+        <a class="text">测试2</a>
+        <a class="text">测试3</a>
+    </div>
+    
+    <div class="widget_dropdown_inner">
+        <div class="widget_dropdown_menu">
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">新建窗口</span>
+                <span class="shortcut">Ctrl+N</span>
+            </a>        
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">新建标签</span>
+                <span class="shortcut">Ctrl+T</span>
+            </a>        
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">打开文件</span>
+                <span class="shortcut">Ctrl+O</span>
+            </a>        
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">打开位置</span>
+                <span class="shortcut">Ctrl+L</span>
+            </a>    
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>                
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">关闭窗口</span>
+                <span class="shortcut">Ctrl+W</span>
+            </a>        
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">关闭标签</span>
+                <span class="shortcut">&nbsp;</span>
+            </a>        
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">另存为...</span>
+                <span class="shortcut">Ctrl+S</span>
+            </a>        
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">用邮件发送此页连接</span>
+                <span class="shortcut">Ctrl+Shirt+I</span>
+            </a> 
+            
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">导入书签...</span>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">导出书签</span>
+            </a>
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">页面设置...</span>
+                <span class="shortcut">Ctrl+Shirt+P</span>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">打印预览</span>
+                <span class="shortcut">&nbsp;</span>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">打印...</span>
+                <span class="shortcut">Ctrl+P</span>
+            </a>
+           <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">退出</span>
+                <span class="shortcut">Ctrl+Q</span>
+            </a>            
+        </div>
+        
+        <div class="widget_dropdown_menu">
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">还原</span>
+                <span class="shortcut">Ctrl+Z</span>
+            </a>        
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">重做</span>
+                <span class="shortcut">Ctrl+Shirt+Z</span>
+            </a>        
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">剪切</span>
+                <span class="shortcut">Ctrl+X</span>
+            </a>        
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">拷贝</span>
+                <span class="shortcut">Ctrl+C</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">粘贴</span>
+                <span class="shortcut">Ctrl+V</span>
+            </a> 
+            <a class="widget_dropdown_menuitem disabled"> 
+                <span class="icon"></span> 
+                <span class="text">删除</span>
+                <span class="shortcut">Del</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">全选</span>
+                <span class="shortcut">Ctrl+A</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">自动填充表单</span>
+                <span class="shortcut">Ctrl+Shirt+A</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">查找</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">拼写和语法</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">私密浏览...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">还原 <u>S</u>afari...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">清空高速缓存...</span>
+                <span class="shortcut">Ctrl+Alt+E</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon checked"></span> 
+                <span class="text">阻止弹出式窗口</span>
+                <span class="shortcut">Ctrl+Shirt+K</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">偏好设置...</span>
+                <span class="shortcut">Ctrl+,</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">清空高速缓存...</span>
+                <span class="shortcut">Ctrl+Alt+E</span>
+            </a> 
+        </div>
+
+        <div class="widget_dropdown_menu">
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">自动填充表单</span>
+                <span class="shortcut">Ctrl+Shirt+A</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">查找</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">拼写和语法</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+        </div>
+        
+        <div class="widget_dropdown_menu">
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">拼写和语法</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">私密浏览...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">还原 <u>S</u>afari...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">清空高速缓存...</span>
+                <span class="shortcut">Ctrl+Alt+E</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon checked"></span> 
+                <span class="text">阻止弹出式窗口</span>
+                <span class="shortcut">Ctrl+Shirt+K</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">偏好设置...</span>
+                <span class="shortcut">Ctrl+,</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">清空高速缓存...</span>
+                <span class="shortcut">Ctrl+Alt+E</span>
+            </a> 
+        </div>
+        
+        <div class="widget_dropdown_menu">
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">查找</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">拼写和语法</span>
+                <span class="shortcut">&gt;&gt;</span>
+            </a> 
+            <a class="widget_dropdown_separator"> 
+                <hr/>
+            </a>
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">私密浏览...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">还原 <u>S</u>afari...</span>
+                <span class="shortcut"></span>
+            </a> 
+            <a class="widget_dropdown_menuitem"> 
+                <span class="icon"></span> 
+                <span class="text">清空高速缓存...</span>
+                <span class="shortcut">Ctrl+Alt+E</span>
+            </a> 
+        </div>                
+        
+    </div>
+</div>
+
+<!-- 
+<fieldset style="border-width: 1px 0 0;padding-left: 20px;font-size: 12px;clear: both;position: relative;top: 10px;">
+    <legend><span>Fieldset 线条中间的文字</span></legend>
+</fieldset>
+
+ -->
+
+<script type="text/javascript">
+//<![CDATA[
+var menu_current;
+function widget_menu_mouseover(e){
+	e.stopPropagation();
+    var menus = $("div.widget_menu a");
+    
+    if( menu_current != undefined){
+        if(this != menu_current) {
+        	var position = $(this).position();
+            // 滑出当前菜单
+            $(menu_current).removeClass("inset");
+            $(menu_current).removeClass("outset");
+            var index = menus.index($(menu_current));
+            $("div.widget_dropdown_menu:nth-child("+(index+1)+")").hide();
+
+            // 滑入下一个菜单
+            $(this).removeClass("outset");
+            $(this).addClass("inset");
+            var index = menus.index($(this));
+            $("div.widget_dropdown_menu:nth-child("+(index+1)+")").show().css({position:"relative", left:(position.left)});
+
+            menu_current = this;
+        }else{
+            // 滑出当前菜单
+            if(this != menu_current) {
+                $(menu_current).removeClass("outset");
+                $(this).addClass("outset");
+            }
+        }
+    }
+}
+function widget_menu_mouseout(e){
+}    
+jQuery(document).ready(function() {
+
+    $("a.widget_dropdown_menuitem,a.widget_dropdown_separator").mousedown(function(e){
+        if($(this).attr("class") == "widget_dropdown_menuitem"){
+        	if(window.console)
+                console.log("You selected the " + $(this).find("span.text").text() + " menu item.");
+        }else if ($(this).attr("class") == "widget_dropdown_separator"){
+        	if(window.console)
+        		   console.log("You selected the menu item separator.");
+        }else{
+        	if(window.console)
+        	    console.log("You selected the unkown menuitem.");
+        }
+        e.stopPropagation();
+        e.preventDefault();
+        return false;
+    });
+    
+    $("div.widget_dropdown_menu").hide();
+	$("div.widget_menu a").mousedown(function(e){
+		e.stopPropagation();
+		menu_current = this;
+        var offset = $(this).offset();
+        var position = $(this).position();
+        var index = $("div.widget_menu a").index($(this));
+        $("div.widget_menu a").removeClass("inset");
+        $("div.widget_dropdown_menu").hide();
+        $("div.widget_dropdown_menu:nth-child("+(index+1)+")").show();
+        if($(this).hasClass("outset")){
+            $(this).removeClass("outset");
+        }
+        $(this).addClass("inset");
+    })
+    .mouseover(widget_menu_mouseover)
+    .mouseout(widget_menu_mouseout);
+
+    $(document).mousedown(function(e){
+        if(menu_current != undefined) {
+            $(menu_current).removeClass("inset");
+            var index = $("div.widget_menu a").index($(menu_current));
+            $("div.widget_dropdown_menu:eq("+index+")").hide();
+        }
+        menu_current = undefined; 
+    });
+});
+//]]>
+</script>
+
+</body>
+</html>
