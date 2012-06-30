@@ -4,6 +4,9 @@ import amqplib.client_0_8 as amqp
 import settings
 
 def main():
+	"""
+	Send message to amqp server
+	"""
     conn = amqp.Connection(host = settings.host)
     ch = conn.channel()
     ch.access_request(settings.virtual_host, active = True, write = True)
