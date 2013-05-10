@@ -64,7 +64,7 @@ About installation and configuration of the rabbitmq server, you can see followi
 * [RabbitMQ Server Installation](http://www.rabbitmq.com/install.html, "RabbitMQ Server Installation")
 * [RabbitMQ Server Configuration](http://www.rabbitmq.com/configure.html, "RabbitMQ Server Configuration")
 
-## Setp5. Run the  feichio.py deamon and the client send.py 
+## Setp5. Run the  feichio.py daemon and the client send.py 
 
 When the fetchio.py is running, it will connecting to rabbitmq server by configuration of settings.py in src directory.
 
